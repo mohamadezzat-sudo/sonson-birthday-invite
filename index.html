@@ -54,45 +54,50 @@
         </header>
 
         <!-- Main Invitation Body -->
-        <main class="grid md:grid-cols-2 gap-8 relative z-10 bg-gray-900 p-6 rounded-2xl border-2 border-neon-purple">
-            
-            <!-- Details Column -->
-            <div class="space-y-6">
-                <div class="flex items-start gap-4">
-                    <span class="text-4xl mt-1">📅</span>
-                    <div>
-                        <h3 class="text-neon-cyan font-bold text-lg">DATE & TIME</h3>
-                        <p class="font-semibold text-xl">Wednesday, August 5th</p>
-                        <p class="font-semibold text-xl">6:00 PM - 11:00 PM</p>
-                    </div>
-                </div>
-                <div class="flex items-start gap-4">
-                    <span class="text-4xl mt-1">🍕</span>
-                    <div>
-                        <h3 class="text-neon-cyan font-bold text-lg">FUELED BY</h3>
-                        <p class="font-semibold text-xl">Love, Smiles, Pizza, Snacks, Cake, & Power-ups!</p>
-                    </div>
-                </div>
+       <!-- Main Invitation Body -->
+<main class="grid md:grid-cols-2 gap-8 relative z-10 bg-gray-900 p-6 rounded-2xl border-2 border-neon-purple">
+    
+    <!-- Details Column -->
+    <div class="space-y-6">
+        <div class="flex items-start gap-4">
+            <span class="text-4xl mt-1">📅</span>
+            <div>
+                <h3 class="text-neon-cyan font-bold text-lg">DATE & TIME</h3>
+                <p class="font-semibold text-xl">Wednesday, August 5th</p>
+                <p class="font-semibold text-xl">6:00 PM - 11:00 PM</p>
             </div>
-
-            <!-- Location Column (The Important Part!) -->
-            <div class="space-y-3 bg-gray-800 p-5 rounded-xl border border-neon-pink">
-                <h2 class="font-arcade text-2xl text-neon-yellow text-center">LOCATION</h2>
-                <div class="text-center">
-                    <p class="text-2xl font-bold text-neon-pink">Rush Hub Arcade</p>
-                    <p class="text-lg">Maxim Mall,</p>
-                    <p class="text-lg">Second New Cairo</p>
-                </div>
-
-                <!-- Custom Google Maps Button -->
-                <a href="https://www.google.com/maps/dir/?api=1&destination=30.0268576,31.4390623&destination_place_id=ChIJWTW-nTQjWBQRxfDaHASs8E8" 
-                   target="_blank"
-                   class="flex items-center justify-center gap-3 w-full bg-neon-pink hover:bg-pink-600 text-white font-arcade py-5 px-4 rounded-xl text-center transition-all duration-300 hover:scale-105 shadow-[0_5px_0_#800055] active:translate-y-1 active:shadow-[0_1px_0_#800055]">
-                    <span class="text-2xl">📍</span>
-                    GET DIRECTIONS
-                </a>
+        </div>
+        <div class="flex items-start gap-4">
+            <span class="text-4xl mt-1">🍕</span>
+            <div>
+                <h3 class="text-neon-cyan font-bold text-lg">FUELED BY</h3>
+                <p class="font-semibold text-xl">Love, smiles, Pizza, snacks, Cake, & Power-ups!</p>
             </div>
-        </main>
+        </div>
+    </div>
+
+    <!-- LOCATION COLUMN (REVISED) -->
+    <div class="bg-gray-800 p-3 rounded-xl border border-neon-pink space-y-1 flex flex-col justify-between">
+        <h2 class="font-arcade text-xl text-neon-yellow text-center">LOCATION</h2>
+        
+        <div class="text-center py-2">
+            <!-- Venue Name (slightly smaller on mobile) -->
+            <p class="text-xl sm:text-lg font-bold text-neon-pink">Rush Hub Arcade</p>
+            <!-- Address details (smaller text) -->
+            <p class="text-lg sm:text-sm text-gray-200">Maxim Mall,</p>
+            <p class="text-lg sm:text-sm text-gray-200">Second New Cairo</p>
+        </div>
+
+        <!-- Custom Google Maps Button (Revised Content and Sizing) -->
+        <a href="https://www.google.com/maps/dir/?api=1&destination=30.0268576,31.4390623&destination_place_id=ChIJWTW-nTQjWBQRxfDaHASs8E8" 
+           target="_blank"
+           class="flex items-center justify-center gap-2 w-full bg-neon-pink hover:bg-pink-600 text-white font-arcade py-3 px-2 rounded-lg text-center transition-all duration-300 hover:scale-105 shadow-[0_5px_0_#800055] active:translate-y-1 active:shadow-[0_1px_0_#800055] mt-2">
+            <span class="text-xl">📍</span>
+            <!-- Text is broken to prevent wrapping issues. "sm:" means text gets even smaller on very tiny phones. -->
+            <span class="text-base sm:text-sm leading-tight text-center">GET <br>DIRECTIONS</span>
+        </a>
+    </div>
+</main>
 
         <!-- Footer / RSVP -->
         <footer class="text-center mt-10 relative z-10">
